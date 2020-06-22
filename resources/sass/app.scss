@@ -1,0 +1,117 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+// Variables
+@import 'variables';
+
+// Bootstrap Sass
+//$icon-font-path: '../fonts/bootstrap/';
+//@import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+// Style
+.main{
+    padding-top: 75px;
+}
+
+.navbar{
+    position: fixed;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.97);
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+table {
+    thead tr {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    }
+
+    tbody tr {
+        padding: 10px 0;
+
+        &:nth-of-type(even) {
+            background: rgba(0, 0, 0, 0.03);
+        }
+    }
+}
+
+.photo {
+    cursor: pointer;
+}
+
+.status-label{
+    width: 100%;
+    margin: 0;
+}
+
+//Custom Table on /orders/show
+.table{
+
+    .head{
+        padding-bottom: 15px;
+    }
+
+    .order-line{
+        margin: 5px -15px 15px -15px;
+        padding: 0 15px;
+
+        &:nth-of-type(even){
+            //background: rgba(0, 0, 0, 0.03);
+        }
+
+        .row{
+            padding: 5px 0;
+
+            &.details{
+                border-top: 1px solid rgba(0, 0, 0, 0.125);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+
+                .detail{
+                    padding: 5px;
+                }
+            }
+        }
+
+        .hide{
+            display: none;
+        }
+
+        .buttons{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .status-form{
+                margin: 0 5px;
+
+                .btn{
+                    min-width: 200px;
+                }
+            }
+        }
+
+        .pre-approval{
+        }
+    }
+}
+
+.confirm-form{
+    display: flex;
+    justify-content: center;
+
+    .btn{
+        min-width: 200px;
+    }
+}
+
+//.status-bar{
+//    position: fixed;
+//    top: 75px;
+//    left: 0;
+//    z-index: 100;
+//    width: 25%;
+//    height: 300px;
+//    background: deeppink;
+//    padding: 15px;
+//}
